@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery - My Portfolio</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      color: #000000;
+      background-color: #7BCCB5;
+      line-height: 1.6;
+    }
+
+    .header {
+      text-align: center;
+      background-color: #FFA500;
+      border-style: solid;
+      border-width: 3px;
+      margin: 20px;
+      border-radius: 10px;
+      padding: 30px;
+      border-color: #000000;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      text-shadow: none;
+    }
+
+    .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  justify-items: center;
+  margin-left: 50px; 
+}
+
+    .gallery-container img {
+      width: 250px; /* Fixed width */
+      height: 200px; /* Fixed height */
+      object-fit: cover; /* Ensures content fits without distortion */
+      border-radius: 10px;
+      border: 3px solid #000000;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px 5px #000000;
+    }
+
+    .home-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      gap: 20px;
+    }
+
+    .home-buttons .button {
+      background-color: #FFA500;
+      border: 3px solid #000000;
+      color: #000000; /* Black text color */
+      padding: 20px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      width: 300px;
+      height: 200px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .home-buttons .button img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .home-buttons .button:hover {
+      background-color: #111;
+      box-shadow: 0 0 20px 5px #000000;
+    }
+
+    .home-buttons .button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+  <div class="header" id="home">
+    <h1>Photo Gallery</h1>
+    <p>Photos Related to Programming, Coding, and Web Development</p>
+  </div>
+
+  <div class="gallery-container">
+    <img src="https://bairesdev.mo.cloudinary.net/blog/2023/08/How-to-Choose-the-Right-Programming-Language-for-a-New-Project.jpg?tx=w_1920,q_auto" alt="Picture 1">
+    <img src="https://i.guim.co.uk/img/media/d059b58efe8ce50d15639f76448becdeec69bc9b/0_184_7200_4320/master/7200.jpg?width=1200&quality=85&auto=format&fit=max&s=d7659f8cde3870d1724610565247623e" alt="Picture 2">
+    <img src="https://jessup.edu/wp-content/uploads/2023/12/Programming-in-Computer-Science.jpg" alt="Picture 3">
+    <img src="https://images.squarespace-cdn.com/content/v1/63d40fe2cbd65e16cb8098b6/1678437282243-XL1EAF7FXW1KFY61HJ5V/why%2Blearn%2Bto%2Bcode.jpg" alt="Picture 4">
+  </div>
+
+  <div class="home-buttons">
+    <button class="button" onclick="window.location.href='Home.html';">
+      <img src="https://www.freeiconspng.com/thumbs/homepage-icon-png/home-page-icon-0.png" alt="Home Icon">
+      Home
+    </button>
+    <button class="button" onclick="window.location.href='personalinformation.html';">
+      <img src="https://cdn-icons-png.flaticon.com/512/4594/4594589.png" alt="Info Icon">
+      Personal Information
+    </button>
+    <button class="button" onclick="window.location.href='skillsandtechnique.html';">
+      <img src="https://cdn-icons-png.flaticon.com/512/4413/4413664.png" alt="Skills Icon">
+      Skills and Techniques
+    </button>
+    <button class="button" onclick="window.location.href='educationalbackground.html';">
+      <img src="https://clipart-library.com/images_k/school-transparent-background/school-transparent-background-10.png" alt="Education Icon">
+      Educational Background
+    </button>
+  </div>
+</body>
+</html>

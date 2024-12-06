@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Background - My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      color: #000000;
+      background-color: #7BCCB5;
+      line-height: 1.6;
+    }
+
+    .header {
+      text-align: center;
+      background-color: #FFA500; /* Orange background */
+      border-style: solid;
+      border-width: 3px;
+      margin: 20px;
+      border-radius: 10px;
+      padding: 30px;
+      border-color: #000000;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      text-shadow: none;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      text-shadow: none;
+    }
+
+    .education-box {
+      background-color: #FFA500; /* Set to orange */
+      border: 2px solid #000000;
+      border-radius: 10px;
+      padding: 30px;
+      margin: 20px;
+      box-shadow: 0 0 10px 2px #000000;
+      max-width: 800px;
+      margin: 30px auto;
+      text-align: left;
+    }
+
+    .education-box h2 {
+      color: #000000; /* Black text */
+      font-size: 2rem;
+      text-align: center;
+      text-shadow: none;
+    }
+
+    .education-box ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .education-box li {
+      color: #000000; /* Black text for list items */
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .education-box span {
+      color: #000000; /* Black text for span elements */
+      font-weight: bold;
+    }
+
+    .home-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 20px;
+    }
+
+    .home-buttons .button {
+      background-color: #FFA500; /* Orange background */
+      border: 3px solid #000000;
+      color: #000000; /* Black text */
+      padding: 20px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      width: 300px;
+      height: 200px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      box-shadow: 0 0 10px 2px #000000;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .home-buttons .button img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .home-buttons .button:hover {
+      background-color: #111;
+      box-shadow: 0 0 20px 5px #000000;
+    }
+
+    .home-buttons .button:active {
+      transform: scale(0.95);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header" id="home">
+    <h1>Jonas Banay's Portfolio</h1>
+    <p>My Educational Journey</p>
+  </div>
+
+  <div class="education-box">
+    <h2>Education Background</h2>
+    <ul>
+      <li><span>Grade School:</span>University of Perpetual Help System Dalta Molino Campus</li> 	
+      <li><span>High School:</span>University of Perpetual Help System Dalta Molino Campus</li>
+      <li><span>Senior High School:</span>University of Perpetual Help System Dalta Molino Campus</li>
+      <li><span>College:</span> University of Perpetual Help System Dalta Molino Campus</li>
+    </ul>
+  </div>
+
+  <div class="home-buttons">
+    <button class="button" onclick="window.location.href='Home.html';">
+      <img src="https://www.freeiconspng.com/thumbs/homepage-icon-png/home-page-icon-0.png" alt="Home Icon">
+      Home
+    </button>
+    <button class="button" onclick="window.location.href='personalinformation.html';">
+      <img src="https://cdn-icons-png.flaticon.com/512/4594/4594589.png" alt="Info Icon">
+      Personal Information
+    </button>
+    <button class="button" onclick="window.location.href='skillsandtechnique.html';">
+      <img src="https://cdn-icons-png.flaticon.com/512/4413/4413664.png" alt="Skills Icon">
+      Skills and Techniques
+    </button>
+    <button class="button" onclick="window.location.href='photogallery.html';">
+      <img src="https://static.vecteezy.com/system/resources/previews/045/302/763/non_2x/cartoon-picture-frame-png.png" alt="Photo Gallery">
+      Photo Gallery
+    </button>
+  </div>
+
+</body>
+</html>
